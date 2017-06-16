@@ -187,4 +187,3 @@ bar {
 
 exec_always --no-startup-id feh --bg-scale $HOME/.wallpaper.png
 exec --no-startup-id compton -b
-exec termite
