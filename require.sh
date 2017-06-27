@@ -1,3 +1,9 @@
 #!/bin/bash
-sudo pacman -S git playerctl keepassx compton firefox feh compton termite synapse
-sudo chown -R loan /usr/share/fonts
+sudo pacman -S git playerctl keepassx2 compton firefox feh i3blocks lxappearance vlc arc-gtk-theme wget lxterminal
+echo 'Use lxappearance to modify the gtk theme'
+yaourt -S moka-icon-theme-git
+wget http://fontawesome.io/assets/font-awesome-4.7.0.zip
+unzip "font-awesome-4.7.0.zip"
+mv "font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" /usr/share/fonts/TTF
+rm "font-awesome-4.7.0.zip"
+rm -r "font-awesome-4.7.0"

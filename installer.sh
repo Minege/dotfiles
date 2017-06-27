@@ -1,9 +1,11 @@
 #!/bin/bash
-unzip "font-awesome-4.7.0.zip"
-mv font-awesome-4.7.0/fonts/fontawesome-webfont.ttf /usr/share/fonts/TTF
-rm ~/.config/i3/config
-rm ~/.config/termite/config
-cp i3config ~/.config/i3/config
-mkdir ~/.config/termite/
-cp termiteconfig ~/.config/termite/config
-rm -r font-awesome-4.7.0.zip font-awesome-4.7.0
+rm ~/.config/i3/config # Delete existing files
+mv i3/config ~/.config/i3/config
+mv i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+mv scripts ~/.config/i3/
+
+wget https://download.jetbrains.com/python/pycharm-community-2017.1.4.tar.gz
+tar -xf pycharm-community-*
+rm pycharm-community-*.tar.gz
+mv pycharm-community-* ~/.pycharm
+sh ~/.pycharm/bin/pycharm.sh
