@@ -258,5 +258,5 @@ exec_always --no-startup-id xmodmap -e "clear lock" #disable caps lock switch
 
 # for_window [instance=notepad] sticky enable # To set this window class sticky ( stay on the top )
 
-exec_always --no-startup-id feh --bg-scale $HOME/.wallpaper.png
+exec_always --no-startup-id feh --bg-scale $HOME/.wallpaper.jpg
 exec --no-startup-id compton -o 0.75 -i 1.0 --backend glx --vsync opengl -b 
