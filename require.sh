@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S git playerctl keepassx2 compton firefox feh i3blocks lxappearance vlc arc-gtk-theme wget lxterminal
+sudo pacman -S rofi git playerctl keepassx2 compton firefox feh i3blocks lxappearance vlc arc-gtk-theme wget lxterminal
 echo 'Use lxappearance to modify the gtk theme'
 yaourt -S moka-icon-theme-git
 wget http://fontawesome.io/assets/font-awesome-4.7.0.zip
