@@ -1,4 +1,5 @@
 #!/bin/bash
+yaourt -S moka-icon-theme-git
 rm ~/.config/i3/config # Delete existing files
 rm ~/.config/i3/i3blocks.conf
 rm -r ~/.config/i3/scripts
