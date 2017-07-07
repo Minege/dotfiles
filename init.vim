@@ -2,7 +2,7 @@ set nocompatible  " Better
 filetype off  " required
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#begin('~/.config/nvim/bundle')
 
 Plugin 'VundleVim/Vundle.vim'
 
@@ -10,10 +10,23 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-fugitive'
 
+" Color scheme
 Plugin 'dracula/vim'
+
+Plugin 'Valloric/YouCompleteMe'
+
+" Status bar mods
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+
 
 call vundle#end()
 filetype plugin indent on
+
+" WHEN USING PYTHON VIRTUALENVIRONNEMENT : 
+
+" let g:python3_host_prog='C:/Users/foo/Envs/neovim3/Scripts/python.exe'
+" let g:python_host_prog='C:/Users/foo/Envs/neovim/Scripts/python.exe'
 
 " set background=dark
 " color solarized

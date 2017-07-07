@@ -8,9 +8,11 @@ mv i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 mv i3/scripts ~/.config/i3/
 mkdir ~/.config/nvim
 mv init.vim ~/.config/nvim
-
-wget https://download.jetbrains.com/python/pycharm-community-2017.1.4.tar.gz
-tar -xf pycharm-community-*
-rm pycharm-community-*.tar.gz
-mv pycharm-community-* ~/.pycharm
-sh ~/.pycharm/bin/pycharm.sh
+echo 'Execute Vundle :PluginUpdate'
+nvim
+~/.config/nvim/bundle/YouCompleteMe/install.py --racer-completer --tern-completer --clang-completer
+# wget https://download.jetbrains.com/python/pycharm-community-2017.1.4.tar.gz
+# tar -xf pycharm-community-*
+# rm pycharm-community-*.tar.gz
+# mv pycharm-community-* ~/.pycharm
+# sh ~/.pycharm/bin/pycharm.sh
