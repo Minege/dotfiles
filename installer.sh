@@ -14,7 +14,7 @@ mv init.vim ~/.config/nvim
 
 git clone https://github.com/VundleVim/Vundle.vim ~/.config/nvim/bundle/Vundle.vim
 nvim +PluginInstall +qall
-~/.config/nvim/bundle/YouCompleteMe/install.py --racer-completer --tern-completer --clang-completer
+~/.config/nvim/bundle/YouCompleteMe/install.py --racer-completer --clang-completer
 # wget https://download.jetbrains.com/python/pycharm-community-2017.1.4.tar.gz
 # tar -xf pycharm-community-*
 # rm pycharm-community-*.tar.gz

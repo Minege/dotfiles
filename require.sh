@@ -11,7 +11,19 @@ echo '  Driver      "intel"' >> $X11
 echo '  Option      "Backlight"  "intel_backlight"' >> $X11
 echo 'EndSection' >> $X11
 
-# nodejs and npm
+# don't forget nodejs and npm
+
+echo 'APT::Default-Release "stable";' >> /etc/apt/apt.conf.d/99defaultrelease
+echo 'deb     http://ftp.ch.debian.org/debian/    stable main contrib non-free' >> /etc/apt/sources.list.d/stable.list
+echo 'deb-src     http://ftp.ch.debian.org/debian/    stable main contrib non-free' >> /etc/apt/sources.list.d/stable.list
+echo 'deb     http://security.debian.org/         stable/updates  main contrib non-free' >> /etc/apt/sources.list.d/stable.list
+ 
+echo 'deb     http://ftp.ch.debian.org/debian/    testing main contrib non-free' >> /etc/apt/sources.list.d/testing.list
+echo 'deb-src     http://ftp.ch.debian.org/debian/    testing main contrib non-free' >> /etc/apt/sources.list.d/testing.list
+echo 'deb     http://security.debian.org/         testing/updates  main contrib non-free' >> /etc/apt/sources.list.d/testing.list
+sudo apt-get update
+sudo apt-get -t testing install cargo
+
 wget http://fontawesome.io/assets/font-awesome-4.7.0.zip
 unzip "font-awesome-4.7.0.zip"
 mv "font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" /usr/share/fonts/TTF
